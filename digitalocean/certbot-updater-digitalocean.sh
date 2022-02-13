@@ -1,5 +1,5 @@
 #!/bin/bash
-set -ex
+set -e
 
 if [[ -z "${CERTBOT_DOMAIN}" ]]; then
   CERTBOT_DOMAIN="${1:?'please provide DOMAIN'}"
