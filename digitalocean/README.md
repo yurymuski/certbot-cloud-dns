@@ -28,6 +28,8 @@ After execution you can copy certs somewhere:
 ## Usage example
 
 ```sh
+chmod +x ./digitalocean/certbot-updater-digitalocean.sh
+
 # iterate over list
 export CERTBOT_EMAIL="YOUR_EMAIL"
 export CERTBOT_DIGITALOCEAN_TOKEN="YOUR_DO_TOKEN"
