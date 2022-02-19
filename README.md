@@ -2,12 +2,11 @@
 
 Bash scripts for issuing Lets encrypt wildcard certs based on DNS challenges
 
-Requirement: docker
+Requirements: docker
 
 Supported cloud DNS:
- - Digital Ocean
+ - [Digital Ocean](digitalocean/README.md)
+ - [Azure](azure/README.md)
 
 TODO:
- - Azure
  - AWS
- - Manual ?
