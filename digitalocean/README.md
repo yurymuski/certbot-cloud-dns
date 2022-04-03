@@ -14,6 +14,7 @@ export CERTBOT_DOMAIN="YOUR_DOMAIN"
 export CERTBOT_EMAIL="YOUR_EMAIL"
 export CERTBOT_DIGITALOCEAN_TOKEN="YOUR_DO_TOKEN"
 export CERTBOT_DIR="YOUR_DIR"
+chmod +x ./digitalocean/certbot-updater-digitalocean.sh
 ./digitalocean/certbot-updater-digitalocean.sh
 
 ```

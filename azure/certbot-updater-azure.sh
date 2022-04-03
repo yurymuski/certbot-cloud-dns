@@ -24,7 +24,7 @@ fi
 if [[ -z "${CERTBOT_DIR}" ]]; then
   CERTBOT_DIR="${6:?'please provide local directory for certbot e.g /tmp/certbot/digitalocean'}"
 fi
-echo $CERTBOT_DIR
+echo $CERTBOT_DIR && mkdir -p $CERTBOT_DIR
 
 echo "Renew SSL for ${CERTBOT_DOMAIN}"
 

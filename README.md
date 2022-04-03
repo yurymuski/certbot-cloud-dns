@@ -7,6 +7,4 @@ Requirements: docker
 Supported cloud DNS:
  - [Digital Ocean](digitalocean/README.md)
  - [Azure](azure/README.md)
-
-TODO:
- - AWS
+ - [AWS](aws/README.md)

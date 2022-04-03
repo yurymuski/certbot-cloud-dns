@@ -18,6 +18,7 @@ export AZ_SERVICE_PRINCIPAL_NAME="YOUR_AZURE_USERNAME"
 export AZ_SERVICE_PRINCIPAL_KEY="YOUR_AZURE_PASS"
 export AZ_TENANT="YOUR_AZURE_TENANT"
 export CERTBOT_DIR="YOUR_DIR"
+chmod +x ./azure/certbot-updater-azure.sh
 ./azure/certbot-updater-azure.sh
 
 ```
