@@ -30,7 +30,7 @@ docker run -it --rm --name certbot \
     -e YANDEX_TOKEN="${CERTBOT_YANDEX_TOKEN}" \
     -e YANDEX_FOLDER_ID="${CERTBOT_YANDEX_FOLDER_ID}" \
     -e YANDEX_DNS_ZONE=${CERTBOT_DOMAIN} \
-    ymuski/certbot-azure:latest \
+    ymuski/certbot-yandex:latest \
     certonly --manual \
         --manual-auth-hook "/ops/extra-scripts/auth-hook.sh" \
         --manual-cleanup-hook "/ops/extra-scripts/cleanup-hook.sh" \

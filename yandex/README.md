@@ -34,7 +34,6 @@ After execution you can copy certs somewhere:
 chmod +x ./yandex/certbot-updater-yandex.sh
 
 # iterate over list
-export CERTBOT_DOMAIN="YOUR_DOMAIN"
 export CERTBOT_EMAIL="YOUR_EMAIL"
 export CERTBOT_YANDEX_TOKEN="YOUR_YANDEX_TOKEN"
 export CERTBOT_YANDEX_FOLDER_ID="YOUR_YANDEX_FOLDER_ID"
