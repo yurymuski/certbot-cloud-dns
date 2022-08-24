@@ -21,6 +21,7 @@ echo $CERTBOT_DIR && mkdir -p $CERTBOT_DIR
 
 mkdir -p "${CERTBOT_DIR}/.secrets"
 echo "dns_digitalocean_token = ${CERTBOT_DIGITALOCEAN_TOKEN}" > ${CERTBOT_DIR}/.secrets/digitalocean-credentials.ini
+chmod 600 ${CERTBOT_DIR}/.secrets/digitalocean-credentials.ini
 
 echo "Renew SSL for ${CERTBOT_DOMAIN}"
 
