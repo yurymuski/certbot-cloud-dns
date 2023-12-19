@@ -9,7 +9,7 @@ if [[ -z "${CERTBOT_EMAIL}" ]]; then
   CERTBOT_EMAIL="${2:?'please set certbot email'}"
 fi
 
-if [[ -z "${CERTBOT_D~IGITALOCEAN_TOKEN}" ]]; then
+if [[ -z "${CERTBOT_DIGITALOCEAN_TOKEN}" ]]; then
   CERTBOT_DIGITALOCEAN_TOKEN="${3:?'please provide DIGITALOCEAN token'}"
 fi
 
