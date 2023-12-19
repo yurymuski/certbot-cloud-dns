@@ -9,7 +9,7 @@ if [[ -z "${CERTBOT_EMAIL}" ]]; then
   CERTBOT_EMAIL="${2:?'please set certbot email'}"
 fi
 
-if [[ -z "${CERTBOT_DIGITALOCEAN_TOKEN}" ]]; then
+if [[ -z "${CERTBOT_D~IGITALOCEAN_TOKEN}" ]]; then
   CERTBOT_DIGITALOCEAN_TOKEN="${3:?'please provide DIGITALOCEAN token'}"
 fi
 
@@ -33,6 +33,7 @@ docker run -it --rm --name certbot \
         --dns-digitalocean \
         --dns-digitalocean-credentials /opt/.secrets/digitalocean-credentials.ini \
         --dns-digitalocean-propagation-seconds 30 \
+        --manual-cleanup-hook "/ops/extra-scripts/cleanup-hook.sh" \
         -d ${CERTBOT_DOMAIN} \
         -d *.${CERTBOT_DOMAIN} \
         --agree-tos \
