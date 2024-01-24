@@ -33,6 +33,7 @@ docker run -it --rm --name certbot \
         --dns-digitalocean \
         --dns-digitalocean-credentials /opt/.secrets/digitalocean-credentials.ini \
         --dns-digitalocean-propagation-seconds 30 \
+        --manual-cleanup-hook "/ops/extra-scripts/cleanup-hook.sh" \
         -d ${CERTBOT_DOMAIN} \
         -d *.${CERTBOT_DOMAIN} \
         --agree-tos \
